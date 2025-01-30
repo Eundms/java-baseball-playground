@@ -1,12 +1,13 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
+plugins {
+    id 'java'  // 'java' 플러그인 선언
+    id 'eclipse'  // 'eclipse' 플러그인 선언
+}
 
 group = 'camp.nextstep'
 version = '1.0.0'
-sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
@@ -15,5 +16,5 @@ dependencies {
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }

@@ -1,26 +1,30 @@
-## [NEXTSTEP 플레이그라운드의 미션 진행 과정](https://github.com/next-step/nextstep-docs/blob/master/playground/README.md)
+https://edu.nextstep.camp/s/RFY359FE/ls/XhVXvdsx 17:50
+
+# 숫자 야구 게임 
+> 현재 브랜치는 숫자 야구 게임을 TDD를 적용하여 다시 작성한 브랜치입니다.  
+
+## 기능 목록
+1) 1-9 숫자 중 랜덤으로 숫자를 구한다
+2) 사용자로부터 입력 받는 3개 숫자 예외 처리
+(1) 1-9 의 숫자인가?
+(2) 중복 값이 있는가?
+(3) 3자리인가?
+3) 결과값을 구한다
+위치와 숫자 값이 같은 경우 - 스트라이크
+위치는 다른데 숫자 값이 같은 경우 - 볼
+숫자 값이 다른 경우 - 낫싱
+4) 사용자가 입력한 값에 대한 실행 결과를 구한다
 
 ---
-## 학습 효과를 높이기 위해 추천하는 미션 진행 방법
 
----
-1. 피드백 강의 전까지 미션 진행 
-> 피드백 강의 전까지 혼자 힘으로 미션 진행. 미션을 진행하면서 하나의 작업이 끝날 때 마다 add, commit
-> 예를 들어 다음 숫자 야구 게임의 경우 0, 1, 2단계까지 구현을 완료한 후 push
+# TDD 원칙과 이를 적용하여 작성하는 방법
+## TDD 원칙
+1. 실패하는 단위 테스트를 작성할 때까지 프로덕션 코드를 작성하지 않는다
+2. 컴파일은 실패하지 않으면서 실행이 실패하는 정도로만 단위 테스트를 작성한다
+3. 현재 실패하는 테스트를 통과할 정도로만 실제 코드를 작성한다
 
-![mission baseball](https://raw.githubusercontent.com/next-step/nextstep-docs/master/playground/images/mission_baseball.png)
+## TDD 적용 방식
+1. 대략적인 도메인 객체 설계
+2. 구현할 기능 목록 작성하기
+   1과 2가 막막하다면, 일단 구현을 해서 도메인 지식을 쌓은 후, 구현한 모든 코드를 버린다.
 
----
-2. 피드백 앞 단계까지 미션 구현을 완료한 후 피드백 강의를 학습한다.
-
----
-3. Git 브랜치를 master 또는 main으로 변경한 후 피드백을 반영하기 위한 새로운 브랜치를 생성한 후 처음부터 다시 미션 구현을 도전한다.
-
-```
-git branch -a // 모든 로컬 브랜치 확인
-git checkout master // 기본 브랜치가 master인 경우
-git checkout main // 기본 브랜치가 main인 경우
-
-git checkout -b 브랜치이름
-ex) git checkout -b apply-feedback
-```
